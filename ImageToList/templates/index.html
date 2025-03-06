@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Text Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Upload Images to Extract Text</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="files" accept="image/*" multiple required>
+        <button type="submit">Upload</button>
+        {% if download_file %}
+        <h2>Download Extracted Text:</h2>
+        <a href="{{ url_for('download_file', filename=download_file) }}">Download Text File</a>
+    {% endif %}
+    </form>
+
+
+</body>
+</html>

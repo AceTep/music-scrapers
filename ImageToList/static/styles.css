@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flexbox to align items */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+input[type="file"] {
+    display: block;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%; /* Make button full-width */
+    max-width: 200px; /* Limit maximum width */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+h2 {
+    color: #333;
+}
+
+pre {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    white-space: pre-wrap; /* Allows long text to wrap */
+    word-wrap: break-word; /* Prevents overflow */
+}
